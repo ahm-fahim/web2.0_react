@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 
 const styleComponent = {
     title: {
@@ -7,39 +8,57 @@ const styleComponent = {
         fontSize: "50px",
     },
     sub_title: {
-        color: "gold",
+        color: "black",
         fontSize: "35px",
     },
     title_text: {
         color: "gray",
         letterSpacing: "3px",
     },
-    body: {
-        display: "flex",
-        flexDirection: "row",
-    },
     sub_body: {
-        width: "23%",
         backgroundColor: "whitesmoke",
         padding: "10px",
-        margin: "10px auto",
         borderRadius: "10px",
+        boxShadow: "2px 2px 5px gray",
+        height: "150px",
+        width: "100%",
+        margin: "10px 0px",
+    },
+    button: {
+        backgroundColor: "tomato",
+        color: "white",
+        border: "none",
+        borderRadius: "50px",
+        fontSize: "25px",
+        padding: "10px 20px",
+        margin: "10px",
+    },
+    code: {
+        backgroundColor: "gray",
+        padding: "10px 15px",
+        borderRadius: "10px",
+        color: "white",
+        letterSpacing: "2px",
+        width: "350px",
+        margin: "10px auto",
+        overflowY: "scroll",
         boxShadow: "2px 2px 5px gray",
     },
 };
 
 function App() {
     return (
-        <div className="App">
+        <div className="App container">
             <Heading></Heading>
             <DataLoad></DataLoad>
+            <DynamicCounter></DynamicCounter>
         </div>
     );
 }
 
 function Heading() {
     return (
-        <div>
+        <div className="container-fluid">
             <h1 style={styleComponent.title}>React Core Concept</h1>
             <h4 style={styleComponent.title_text}>
                 Here we can write html,js in the same statement. We can apply
@@ -72,10 +91,13 @@ function DataLoad() {
         },
     ];
     return (
-        <div>
+        <div className="container-fluid">
             <h2 style={styleComponent.sub_title}>
                 How to load Data from array?
             </h2>
+            <p style={styleComponent.code}>
+                Array.map(value => console.log(value));
+            </p>
             <Cart name={language}></Cart>
         </div>
     );
@@ -83,16 +105,63 @@ function DataLoad() {
 
 function Cart(props) {
     const languageArray = props.name;
-    console.log(languageArray[0].lang);
+    // console.log(languageArray[0].lang);
     return (
-        <div>
-            <div style={styleComponent.body}>
+        <div className="container-fluid mt-5 mb-5">
+            <div style={styleComponent.body} className="row">
                 {languageArray.map((details, key) => (
-                    <div key={key} style={styleComponent.sub_body}>
-                        <h3 style={styleComponent.title}>{details.lang}</h3>
-                        <p style={styleComponent.title_text}>{details.title}</p>
+                    <div
+                        key={key}
+                        className="col-md-6 col-lg-3 col-sm-12 d-flex justify-content-center align-items-center"
+                    >
+                        <div style={styleComponent.sub_body}>
+                            <h3 style={styleComponent.title}>{details.lang}</h3>
+                            <p style={styleComponent.title_text}>
+                                {details.title}
+                            </p>
+                        </div>
                     </div>
                 ))}
+            </div>
+        </div>
+    );
+}
+
+function DynamicCounter() {
+    return (
+        <div className="container-fluid">
+            <h1 style={styleComponent.sub_title}>Dynamic Counter Function</h1>
+            <p style={styleComponent.code}>
+                const [count, setCount] = useState(0) <br />
+                setCount(count + 1) <br /> setCount(count - 1)
+            </p>
+            <div>
+                <Counter></Counter>
+                <Counter></Counter>
+                <Counter></Counter>
+            </div>
+        </div>
+    );
+}
+
+function Counter() {
+    const [count, setCount] = useState(0);
+    return (
+        <div>
+            <div style={styleComponent.sub_body}>
+                <h1>{count}</h1>
+                <button
+                    style={styleComponent.button}
+                    onClick={() => setCount(count + 1)}
+                >
+                    Increase +
+                </button>
+                <button
+                    style={styleComponent.button}
+                    onClick={() => setCount(count - 1)}
+                >
+                    Decrease -
+                </button>
             </div>
         </div>
     );
