@@ -32,23 +32,14 @@ To upgrade to latest version (and not current stable) version, you can use
 2.auto rename
 3.ES7+ React/Redux/React-Native snippets
 
-
-###settings:
+<h3>settings</h3>
 
 ```step1: ctrl+,```
 
-<br>
-
 ```step2: extension```
-
-<br>
 
 ```step3: emmet```
 
-<br>
-
 ```step4: include language```
-
-<br>
 
 ```step5: javascript : javascriptreact```
