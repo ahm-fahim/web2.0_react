@@ -2,7 +2,7 @@
 
 [web2.0](https://github.com/ahm-fahim/web2.0)
 
-###update Node version on ubuntu
+<h1>update Node version on ubuntu</h1>
 
 ```sudo npm cache clean -f```
 ```sudo npm install -g n```
@@ -26,11 +26,15 @@ To upgrade to latest version (and not current stable) version, you can use
 
 <h1>VS Code Extension For React and settings</h1>
 
-1.auto import
+<h3>Extension name</h3>
 
+1.auto import
+2.auto rename
+3.ES7+ React/Redux/React-Native snippets
 
 
 ###settings:
+
 ```step1: ctrl+,```
 
 <br>
