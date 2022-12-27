@@ -30,7 +30,7 @@ To upgrade to latest version (and not current stable) version, you can use
 
 <p>1.auto import </p>
 <p>2.auto rename</p>
-<p>3.ES7+ React/Redux/React-Native snippets</p>
+<p>3.React Extension Pack</p>
 
 <h3>settings</h3>
 
