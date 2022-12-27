@@ -169,7 +169,7 @@ function Counter() {
 }
 
 function RandomUser() {
-    const [user, setUser] = useState("");
+    const [user, setUser] = useState([]);
     useEffect(() => {
         fetch("https://randomuser.me/api/")
             .then((res) => res.json())
