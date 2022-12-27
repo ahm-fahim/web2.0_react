@@ -2,7 +2,7 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = (props) => {
-    const itemList = props.item;
+    const { strDrinkThumb, strDrink } = props.item; //distructure
 
     return (
         <div className="col-lg-3 col-md-6 col-sm-12 ">
@@ -10,10 +10,10 @@ const Cart = (props) => {
                 <div className="card-body">
                     <img
                         className="img-fluid"
-                        src={itemList.strDrinkThumb}
+                        src={strDrinkThumb}
                         alt=""
                     />
-                    <h3 className="text-danger">{itemList.strDrink}</h3>
+                    <h3 className="text-danger">{strDrink}</h3>
                 </div>
             </div>
         </div>
