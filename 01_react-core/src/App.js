@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const styleComponent = {
     title: {
@@ -20,8 +20,8 @@ const styleComponent = {
         padding: "10px",
         borderRadius: "10px",
         boxShadow: "2px 2px 5px gray",
-        height: "150px",
         width: "100%",
+        minHeight: "150px",
         margin: "10px 0px",
     },
     button: {
@@ -52,6 +52,7 @@ function App() {
             <Heading></Heading>
             <DataLoad></DataLoad>
             <DynamicCounter></DynamicCounter>
+            <RandomUser></RandomUser>
         </div>
     );
 }
@@ -166,4 +167,34 @@ function Counter() {
         </div>
     );
 }
+
+function RandomUser() {
+    const [user, setUser] = useState("");
+    useEffect(() => {
+        fetch("https://randomuser.me/api/")
+            .then((res) => res.json())
+            .then((data) => setUser(data.results[0]));
+    }, []);
+    return (
+        <div>
+            <h1>Random User</h1>
+            <div style={styleComponent.code}>
+                <p>fetch data from api using</p>
+                <h4>useEffect</h4>
+            </div>
+            <div style={styleComponent.sub_body}>
+                <img
+                    src={user.picture.large}
+                    alt=""
+                    style={{ borderRadius: "100px" }}
+                />
+                <h2 style={styleComponent.title}>
+                    {user.name.title} {user.name.first} {user.name.last}
+                </h2>
+                <h4>Gender: {user.gender}</h4>
+            </div>
+        </div>
+    );
+}
+
 export default App;
