@@ -23,3 +23,28 @@ To upgrade to latest version (and not current stable) version, you can use
   
   
   ```sudo npm uninstall -g n```
+
+<h1>VS Code Extension For React and settings</h1>
+
+1.auto import
+
+
+
+###settings:
+```step1: ctrl+,```
+
+<br>
+
+```step2: extension```
+
+<br>
+
+```step3: emmet```
+
+<br>
+
+```step4: include language```
+
+<br>
+
+```step5: javascript : javascriptreact```
