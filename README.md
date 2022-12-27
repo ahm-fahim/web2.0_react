@@ -4,25 +4,23 @@
 
 <h1>update Node version on ubuntu</h1>
 
-```sudo npm cache clean -f```
-```sudo npm install -g n```
-```sudo n stable```
+`sudo npm cache clean -f`
+`sudo npm install -g n`
+`sudo n stable`
 
 To upgrade to latest version (and not current stable) version, you can use
 
-```sudo n latest```
+`sudo n latest`
 
 ###Fix PATH:
 
-  ```sudo apt-get install --reinstall nodejs-legacy```     # fix /usr/bin/node
-  
-  
-###To undo:
+`sudo apt-get install --reinstall nodejs-legacy` # fix /usr/bin/node
 
-  ```sudo n rm 6.0.0```    # replace number with version of Node that was installed
-  
-  
-  ```sudo npm uninstall -g n```
+<h4>To undo: </h4>
+
+`sudo n rm 6.0.0` # replace number with version of Node that was installed
+
+`sudo npm uninstall -g n`
 
 <h1>VS Code Extension For React and settings</h1>
 
@@ -34,12 +32,12 @@ To upgrade to latest version (and not current stable) version, you can use
 
 <h3>settings</h3>
 
-```step1: ctrl+,```
+`step1: ctrl+,`
 
-```step2: extension```
+`step2: extension`
 
-```step3: emmet```
+`step3: emmet`
 
-```step4: include language```
+`step4: include language`
 
-```step5: javascript : javascriptreact```
+`step5: javascript : javascriptreact`
