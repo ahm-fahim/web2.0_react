@@ -97,7 +97,7 @@ function DataLoad() {
                 How to load Data from array?
             </h2>
             <p style={styleComponent.code}>
-                Array.map(value => console.log(value));
+                Array.map(value);
             </p>
             <Cart name={language}></Cart>
         </div>
@@ -136,10 +136,16 @@ function DynamicCounter() {
                 const [count, setCount] = useState(0) <br />
                 setCount(count + 1) <br /> setCount(count - 1)
             </p>
-            <div>
-                <Counter></Counter>
-                <Counter></Counter>
-                <Counter></Counter>
+            <div className="row">
+                <div className="col-lg-4 col-sm-12 col-md-6">
+                    <Counter></Counter>
+                </div>
+                <div className="col-lg-4 col-sm-12 col-md-6">
+                    <Counter></Counter>
+                </div>
+                <div className="col-lg-4 col-sm-12 col-md-6">
+                    <Counter></Counter>
+                </div>
             </div>
         </div>
     );
@@ -169,11 +175,11 @@ function Counter() {
 }
 
 function RandomUser() {
-    const [user, setUser] = useState([]);
+    const [users, setUsers] = useState([]);
     useEffect(() => {
         fetch("https://randomuser.me/api/")
             .then((res) => res.json())
-            .then((data) => setUser(data.results[0]));
+            .then((data) => setUsers(data.results));
     }, []);
     return (
         <div>
@@ -182,19 +188,25 @@ function RandomUser() {
                 <p>fetch data from api using</p>
                 <h4>useEffect</h4>
             </div>
-            <div style={styleComponent.sub_body}>
-                <img
-                    src={user.picture.large}
-                    alt=""
-                    style={{ borderRadius: "100px" }}
-                />
-                <h2 style={styleComponent.title}>
-                    {user.name.title} {user.name.first} {user.name.last}
-                </h2>
-                <h4>Gender: {user.gender}</h4>
-            </div>
+            {
+                users.map((user,id)=><DisplayUser user={user} key={id}></DisplayUser>)
+            }
         </div>
     );
 }
 
+function DisplayUser(props) {
+    const { gender ,name,picture} = props.user;
+    console.log(props.user);
+
+    return (
+        <div>
+            <img src={picture.large} alt="" style={{borderRadius:'100px'}}/>
+            <h1>
+                {name.title} {name.first} {name.last}
+            </h1>
+            <p>Gender: {gender}</p>
+        </div>
+    );
+}
 export default App;
