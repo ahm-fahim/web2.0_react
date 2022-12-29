@@ -1,0 +1,12 @@
+.background{
+    background-color: aliceblue;
+    box-shadow: 1px 2px 10px lightgray;
+    padding: 10px;
+    width: 360px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.background span{
+    font-size: 20px ;
+    font-weight: bold;
+}
