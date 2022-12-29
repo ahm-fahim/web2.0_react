@@ -41,3 +41,7 @@ To upgrade to latest version (and not current stable) version, you can use
 `step4: include language`
 
 `step5: javascript : javascriptreact`
+
+
+<h1>markdown preview)</h1>
+### ```ctrl+shift+p```
