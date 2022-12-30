@@ -1,29 +1,40 @@
 import React, { useState } from "react";
+import { setDB } from "../../utilities/setDB";
 import "./TodoList.css";
 
-const TodoList = (key, value) => {
+const TodoList = () => {
     const [input, setInput] = useState([]);
-    const [todo, setTodo] = useState([]);
+    const [todos, setTodos] = useState([]);
 
-    const getValue = (e) => {
+    const getInputValue = (e) => {
         setInput(e.target.value);
     };
 
-    const addTodo = () => {
-        setTodo(input);
-        const newTodo = todo;
-        localStorage.setItem("todo-item", JSON.stringify(newTodo));
+    const addTodo = (e) => {
+        setDB(input);
+        getDBvalue();
     };
 
+    const getDBvalue = () => {
+        const dbValue = localStorage.getItem("todo-item");
+        const todoItem = JSON.parse(dbValue);
+        setTodos(todoItem);
+    };
     return (
         <div className="background">
             <h3>TODO LIST</h3>
             <div>
                 {/* todo list */}
                 <ol>
-                    <li>{localStorage.getItem("todo-item")}</li>
+                    {Object.keys(todos).map((todo, key) => (
+                        <li key={key}>{todo}</li>
+                    ))}
                 </ol>
-                <input onChange={getValue} className="inputField" type="text" />
+                <input
+                    onChange={getInputValue}
+                    className="inputField"
+                    type="text"
+                />
                 <button onClick={addTodo} className="btn">
                     Add To Do +
                 </button>
