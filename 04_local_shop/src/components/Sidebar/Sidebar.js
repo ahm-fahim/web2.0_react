@@ -1,34 +1,34 @@
 import React from "react";
-import "./Sidebar.css"
+import "./Sidebar.css";
 
 const Sidebar = () => {
     return (
         <div>
-            <nav class="navbar navbar-dark header sidebar">
-                <div class="container d-flex justify-content-end">
-                    <div class="">
+            <nav class="navbar navbar-dark sidebarPosition">
+                <div class="container">
+                    <div class="d-flex">
                         <button
-                            class="btn btn-dark toggleBTN"
+                            class="navbar-toggler text-bg-dark toggleBTN"
                             type="button"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasDarkNavbar"
                             aria-controls="offcanvasDarkNavbar"
                         >
-                            Inventory Cart
+                            Cart
                         </button>
                     </div>
                     <div
-                        class="offcanvas offcanvas-end bg-dark"
+                        className="offcanvas offcanvas-end bg-dark"
                         tabindex="-1"
                         id="offcanvasDarkNavbar"
                         aria-labelledby="offcanvasDarkNavbarLabel"
                     >
-                        <div class="offcanvas-header">
+                        <div className="offcanvas-header">
                             <h5
-                                class="offcanvas-title "
+                                className="offcanvas-title"
                                 id="offcanvasDarkNavbarLabel"
                             >
-                                <span class="text-danger fw-bold">
+                                <span className="text-warning fw-bold">
                                     Inventory Cart
                                 </span>
                             </h5>
@@ -39,10 +39,8 @@ const Sidebar = () => {
                                 aria-label="Close"
                             ></button>
                         </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li>side</li>
-                            </ul>
+                        <div className="offcanvas-body">
+                            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3"></ul>
                         </div>
                     </div>
                 </div>
