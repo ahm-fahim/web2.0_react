@@ -19,7 +19,7 @@ const Shop = () => {
     };
 
     return (
-        <div className="container-fluid mt-5 pt-5">
+        <div className="container-fluid ">
             <div>
                 <h1>Cart : {cart.length}</h1>
             </div>
