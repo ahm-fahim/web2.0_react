@@ -19,4 +19,10 @@ const setDB = (id) => {
     localStorage.setItem("todo-item", JSON.stringify(todoList));
 };
 
-export { setDB };
+const removeItem = (key) => {  
+    const dbItem = localStorage.getItem("todo-item");
+    console.log(dbItem);
+    console.log(key);
+};
+
+export { setDB, removeItem };

@@ -1,20 +1,27 @@
-.background{
-    background-color:azure;
+.background {
+    background-color: azure;
     box-shadow: 1px 2px 10px lightgray;
     padding: 10px;
     width: 360px;
     margin: 10px auto;
     border-radius: 10px;
 }
-.inputField{
+.inputField {
     box-shadow: 2px 2px 10px solid;
     border-radius: 10px;
     height: 30px;
+    margin: 10px;
 }
-.btn{
-    border:none;
+.btn {
+    border: none;
     padding: 10px 15px;
     background-color: #b11d02;
     color: white;
     border-radius: 10px;
+    margin: 10px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
 }
