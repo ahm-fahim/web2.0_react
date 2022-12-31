@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Products from "../Products/Products";
+import Sidebar from "../Sidebar/Sidebar";
 import "./Shop.css";
+
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -20,9 +22,6 @@ const Shop = () => {
 
     return (
         <div className="container-fluid ">
-            <div>
-                <h1>Cart : {cart.length}</h1>
-            </div>
             <div className="row">
                 {products.map((product) => (
                     <Products
@@ -32,6 +31,7 @@ const Shop = () => {
                     ></Products>
                 ))}
             </div>
+            <Sidebar cart={cart}></Sidebar>
         </div>
     );
 };

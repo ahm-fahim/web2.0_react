@@ -1,46 +1,52 @@
 import React from "react";
 import "./Sidebar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Cart from "../Cart/Cart";
 
-const Sidebar = () => {
+const Sidebar = ({ cart }) => {
     return (
         <div>
-            <nav class="navbar navbar-dark sidebarPosition">
-                <div class="container">
-                    <div class="d-flex">
+            <nav className="navbar navbar-dark sidebarPosition">
+                <div className="container">
+                    <div className="d-flex">
                         <button
-                            class="navbar-toggler text-bg-dark toggleBTN"
+                            className="navbar-toggler text-bg-light cartIcon toggleBTN"
                             type="button"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasDarkNavbar"
                             aria-controls="offcanvasDarkNavbar"
                         >
-                            Cart
+                            <span className="text-danger">{cart.length}</span>
+                            <FontAwesomeIcon icon={faShoppingCart} />
                         </button>
                     </div>
                     <div
                         className="offcanvas offcanvas-end bg-dark"
-                        tabindex="-1"
+                        tabIndex="-1"
                         id="offcanvasDarkNavbar"
                         aria-labelledby="offcanvasDarkNavbarLabel"
                     >
                         <div className="offcanvas-header">
-                            <h5
+                            <h3
                                 className="offcanvas-title"
                                 id="offcanvasDarkNavbarLabel"
                             >
-                                <span className="text-warning fw-bold">
-                                    Inventory Cart
+                                <span className="text-danger fw-bold">
+                                    Order Summary
                                 </span>
-                            </h5>
+                            </h3>
                             <button
                                 type="button"
-                                class="btn-close btn-close-white"
+                                className="btn-close btn-close-white"
                                 data-bs-dismiss="offcanvas"
                                 aria-label="Close"
                             ></button>
                         </div>
                         <div className="offcanvas-body">
-                            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3"></ul>
+                            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <Cart cart={cart}></Cart>
+                            </ul>
                         </div>
                     </div>
                 </div>

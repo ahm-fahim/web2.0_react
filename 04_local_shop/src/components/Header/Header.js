@@ -4,7 +4,7 @@ import logo from "../../images/pngwing.com.png";
 
 const Header = () => {
     return (
-        <div>
+        <div className="">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
                     <span className="navbar-brand">
@@ -27,22 +27,15 @@ const Header = () => {
                     >
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item ">
-                                <span
-                                    className="nav-link"
-                                    aria-current="page"
-                                >
+                                <span className="nav-link" aria-current="page">
                                     Shop
                                 </span>
                             </li>
                             <li className="nav-item">
-                                <span className="nav-link">
-                                    Orders
-                                </span>
+                                <span className="nav-link">Orders</span>
                             </li>
                             <li className="nav-item">
-                                <span className="nav-link">
-                                    Inventory
-                                </span>
+                                <span className="nav-link">Inventory</span>
                             </li>
                         </ul>
                     </div>
