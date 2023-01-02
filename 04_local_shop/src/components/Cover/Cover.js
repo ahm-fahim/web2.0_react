@@ -18,7 +18,7 @@ const Cover = () => {
                         type="button"
                         data-bs-target="#carouselExampleDark"
                         data-bs-slide-to="0"
-                        class="active"
+                        className="active"
                         aria-current="true"
                         aria-label="Slide 1"
                     ></button>
@@ -46,7 +46,7 @@ const Cover = () => {
                         className="carousel-item active"
                         data-bs-interval="2000"
                     >
-                        <div className="row text-bg-danger p-4 d-flex align-items-center justify-content-center">
+                        <div className="row text-bg-dark p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12">
                                 <h1>Life Is Beautiful With Family!</h1>
                             </div>
@@ -60,7 +60,7 @@ const Cover = () => {
                         </div>
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <div className="row text-bg-warning p-4 d-flex align-items-center justify-content-center">
+                        <div className="row text-bg-danger p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12">
                                 <h1>Without Friends Life is Incomplete!</h1>
                             </div>
@@ -74,7 +74,7 @@ const Cover = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="row text-bg-success p-4 d-flex align-items-center justify-content-center">
+                        <div className="row text-bg-warning p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12 ">
                                 <h1>Wife is the half part of a men</h1>
                             </div>

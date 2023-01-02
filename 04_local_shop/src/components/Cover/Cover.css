@@ -4,8 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid gray;
-    border-radius: 10px;
 }
 .carousel img{
     height: 60vh;
@@ -13,4 +11,13 @@
     display: flex;
     justify-content: end;
     
+}
+.carousel-item{
+    height: 70vh;
+    text-align: center;
+}
+.row{
+    border-radius: 30px;
+    margin: 10px;
+
 }
