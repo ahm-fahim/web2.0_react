@@ -580,19 +580,6 @@
         "quantity": 0
     },
     {
-        "id": "e4220958-06d2-4d50-96fa-0163a563sdf43d",
-        "category": "Men's Pants",
-        "name": "TIRO 21 TRACK PANTS",
-        "seller": "Addidas",
-        "price": 148,
-        "stock": 41,
-        "ratings": 3,
-        "ratingsCount": 4483,
-        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3cb8057730844247a568ac9800fa36fb_9366/Tiro_21_Track_Pants_Blue_GE5425_21_model.jpg",
-        "shipping": 8,
-        "quantity": 0
-    },
-    {
         "id": "ae69f0e4-559c-4b24-8032-80b63f9sdgdsb5073",
         "category": "Men's Pants",
         "name": "TIRO TRACK PANTS RED",
@@ -629,19 +616,6 @@
         "ratingsCount": 3383,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c7f050932336444ca286acbb0121f995_9366/Essentials_French_Terry_Tapered-Cuff_3-Stripes_Pants_Grey_GK8824_21_model.jpg",
         "shipping": 26,
-        "quantity": 0
-    },
-    {
-        "id": "fd52819a-cb78-4510-ad2f-c5bdd8srew88ae78",
-        "category": "Men's Pants",
-        "name": "FRENCH TERRY TAPERED CUFF LOGO PANTS",
-        "seller": "Addidas",
-        "price": 189,
-        "stock": 27,
-        "ratings": 3,
-        "ratingsCount": 1974,
-        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3fb5325716cc4e45a76bac4700ea31dc_9366/Essentials_French_Terry_Tapered_Cuff_Logo_Pants_Black_GK8968_21_model.jpg",
-        "shipping": 20,
         "quantity": 0
     },
     {
@@ -733,19 +707,6 @@
         "ratingsCount": 1010,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/6853ac5565a9407bae19ac080120d9d7_9366/Superstar_Boots_Red_FZ2642_01_standard.jpg",
         "shipping": 4,
-        "quantity": 0
-    },
-    {
-        "id": "fd52819a-cb78-4510-ad2f-c5bdd888ae78",
-        "category": "Men's Pants",
-        "name": "FRENCH TERRY TAPERED CUFF LOGO PANTS",
-        "seller": "Addidas",
-        "price": 189,
-        "stock": 27,
-        "ratings": 3,
-        "ratingsCount": 1974,
-        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3fb5325716cc4e45a76bac4700ea31dc_9366/Essentials_French_Terry_Tapered_Cuff_Logo_Pants_Black_GK8968_21_model.jpg",
-        "shipping": 20,
         "quantity": 0
     },
     {
@@ -865,19 +826,7 @@
         "shipping": 35,
         "quantity": 0
     },
-    {
-        "id": "a2615943-7eeb-4d6a-ab1b-78fb51ce39da",
-        "category": "Men's Sneaker",
-        "name": "CREATOR 365 TEE",
-        "seller": "Addidas",
-        "price": 34,
-        "stock": 20,
-        "ratings": 3,
-        "ratingsCount": 4727,
-        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0af79283953e498480c6ac22015ec878_9366/Creator_365_Tee_Black_GL0465_21_model.jpg",
-        "shipping": 2,
-        "quantity": 0
-    },
+
     {
         "id": "27cf3efa-7352-4889-85c4-44a4de2aa93a",
         "category": "Men's Sneaker",
@@ -915,19 +864,6 @@
         "ratingsCount": 3343,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c3f5445517340e8bc02ad8100ffd3f6_9366/Runner_Tee_Burgundy_H25050_21_model.jpg",
         "shipping": 48,
-        "quantity": 0
-    },
-    {
-        "id": "c6cb80a7-3542-4270-bd2b-920efd5f3f85",
-        "category": "Men's Sneaker",
-        "name": "V-DAY TEE (GENDER NEUTRAL)",
-        "seller": "Addidas",
-        "price": 18,
-        "stock": 2,
-        "ratings": 4,
-        "ratingsCount": 1590,
-        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/abfc348baf3243289c4bada000d1238b_9366/V-Day_Tee_(Gender_Neutral)_Pink_HI6014_21_model.jpg",
-        "shipping": 13,
         "quantity": 0
     },
     {
