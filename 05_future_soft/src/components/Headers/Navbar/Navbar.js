@@ -7,9 +7,9 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const navItem = [
         { id: 1, name: "Home", link: "/home" },
-        { id: 2, name: "Mobile Apps", link: "/mobile_apps" },
+        { id: 2, name: "About Us", link: "/about_us" },
         { id: 3, name: "Service", link: "/service" },
-        { id: 4, name: "Blog", link: "/blog" },
+        { id: 4, name: "Cources", link: "/cources" },
         { id: 5, name: "Contact Us", link: "/contact_us" },
     ];
     return (
@@ -17,7 +17,8 @@ const Navbar = () => {
             <div className="flex items-center animate-pulse">
                 <img className="w-20 h-20" src={logo} alt="" />
                 <p className="font-bold text-3xl font-serif">
-                    Future <span className="text-green-600">S</span>oft
+                    Soft. <span className="text-green-600">P</span>
+                    easent
                 </p>
             </div>
             <div

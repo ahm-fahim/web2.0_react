@@ -11,7 +11,7 @@ const About = () => {
                     We are From Another Space to Automate the World
                 </h1>
                 <p className="text-xl text-gray-600 mt-10">
-                    Future Soft. works in multiple areas including software
+                    Soft. Peasent works in multiple areas including software
                     development, website development, customized software
                     solution, mobile app development, theme design, and
                     development. Our dream is to continue your journey with
@@ -22,7 +22,11 @@ const About = () => {
                 </button>
             </div>
             <div className=" p-10">
-                <img className="border-b-2 border-green-600" src={team} alt="" />
+                <img
+                    className="border-b-2 border-green-600"
+                    src={team}
+                    alt=""
+                />
             </div>
         </div>
     );

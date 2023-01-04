@@ -1,5 +1,6 @@
 import React from 'react';
 import Industry from '../Industry/Industry';
+import Platform from '../Platform/Platform';
 
 const Services = () => {
     return (
@@ -29,6 +30,7 @@ const Services = () => {
 
             <div>
                 <Industry></Industry>
+                <Platform></Platform>
             </div>
         </div>
     );

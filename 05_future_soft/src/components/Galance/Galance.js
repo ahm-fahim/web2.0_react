@@ -12,7 +12,7 @@ const Galance = () => {
     return (
         <div className="bg-green-50 bg-fixed">
             <div className="text-center pt-10">
-                <h3 className="text-2xl font-mono">Futute Soft.</h3>
+                <h3 className="text-2xl font-mono">Soft. Peasent</h3>
                 <h1 className="text-5xl animate-pulse font-extrabold text-green-600">
                     At a Glance
                 </h1>

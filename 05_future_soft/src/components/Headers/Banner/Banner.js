@@ -23,12 +23,12 @@ const Banner = () => {
                     </span>
                 </h1>
                 <p className="text-xl font-mono mt-10">
-                    Future Soft. has a global reputation for up to scratch
-                    customer experience which marks us as one of the best
-                    software development companies in the world.
+                    Soft. Peasent has a global reputation for up to scratch customer
+                    experience which marks us as one of the best software
+                    development companies in the world.
                 </p>
             </div>
-            <div >
+            <div>
                 <img src={cover} alt="" />
                 <div className="bg-green-600 text-white w-40 text-center items-center rounded-lg drop-shadow-xl p-4  animate-bounce mt-[-96px]">
                     <span className="text-5xl">10+</span>
