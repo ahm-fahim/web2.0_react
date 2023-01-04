@@ -4,7 +4,7 @@ import "./Banner.css"
 
 const Banner = () => {
     return (
-        <div className="md:grid grid-cols-2 gap-4 justify-center items-center p-10">
+        <div className="md:grid grid-cols-2 gap-4 justify-center items-center p-10 mt-20">
             <div>
                 <h1 className="text-4xl font-sans">
                     <span className="font-bold">

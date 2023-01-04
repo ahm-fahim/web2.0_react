@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../../images/logo.png";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import "./Navbar.css";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
         { id: 5, name: "Contact Us", link: "/contact_us" },
     ];
     return (
-        <div className="flex justify-between items-center bg-white shadow-md md:px-10">
+        <div className="flex justify-between items-center bg-white shadow-md md:px-10 navbar-fixed z-40">
             <div className="flex items-center animate-pulse">
                 <img className="w-20 h-20" src={logo} alt="" />
                 <p className="font-bold text-3xl font-serif">
@@ -37,7 +38,10 @@ const Navbar = () => {
                 }`}
             >
                 {navItem.map((item) => (
-                    <li className="mx-2 hover:text-green-600 duration-200" key={item.id}>
+                    <li
+                        className="mx-2 hover:text-green-600 duration-200"
+                        key={item.id}
+                    >
                         <a href={item.link}>{item.name}</a>
                     </li>
                 ))}
