@@ -1,4 +1,4 @@
-# Future Soft
+# Future Soft --- [live](https://astounding-faun-76da14.netlify.app/)
 
 ### `npx create-react-app future_soft`
 
