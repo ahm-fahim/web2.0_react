@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="flex items-center animate-pulse">
                 <img className="w-20 h-20" src={logo} alt="" />
                 <p className="font-bold text-3xl font-serif">
-                    Future <span className="text-red-700">S</span>oft
+                    Future <span className="text-green-600">S</span>oft
                 </p>
             </div>
             <div

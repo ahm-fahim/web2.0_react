@@ -7,7 +7,7 @@ const Banner = () => {
             <div>
                 <h1 className="text-4xl font-sans">
                     <span className="font-bold">
-                        <span className="animate-pulse text-red-700">
+                        <span className="animate-pulse text-green-600">
                             Best Software Development
                         </span>{" "}
                         Company
@@ -15,7 +15,7 @@ const Banner = () => {
                     <span className="font-thin">
                         To Architect The Dream For
                     </span>{" "}
-                    <span className="font-bold text-red-700">
+                    <span className="font-bold text-green-600">
                         Next Generation
                     </span>
                 </h1>
@@ -27,10 +27,12 @@ const Banner = () => {
             </div>
             <div>
                 <img src={cover} alt="" />
-                <div className="bg-red-700 text-white w-40 text-center items-center rounded-lg shadow-lg p-4  animate-bounce mt-[-96px]">
+                <div className="bg-green-600 text-white w-40 text-center items-center rounded-lg shadow-lg p-4  animate-bounce mt-[-96px]">
                     <span className="text-5xl">10+</span>
                     <br />
-                    <span className="text-xl font-mono">years of experience</span>
+                    <span className="text-xl font-mono">
+                        years of experience
+                    </span>
                 </div>
             </div>
         </div>
