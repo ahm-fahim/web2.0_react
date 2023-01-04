@@ -1,0 +1,7 @@
+.rotateImg {
+  animation: coverImg 5s infinite;
+}
+
+@keyframes coverImg {
+  50% {transform: rotate(5deg);}
+}
