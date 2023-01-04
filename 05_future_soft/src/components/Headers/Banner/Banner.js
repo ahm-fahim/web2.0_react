@@ -1,5 +1,6 @@
 import React from "react";
 import cover from "../../../images/cover.png";
+import "./Banner.css"
 
 const Banner = () => {
     return (
@@ -7,9 +8,11 @@ const Banner = () => {
             <div>
                 <h1 className="text-4xl font-sans">
                     <span className="font-bold">
+                        Best{" "}
                         <span className="animate-pulse text-green-600">
-                            Best Software Development
+                            Software Development
                         </span>{" "}
+                        <br />
                         Company
                     </span>{" "}
                     <span className="font-thin">
@@ -25,9 +28,9 @@ const Banner = () => {
                     software development companies in the world.
                 </p>
             </div>
-            <div>
+            <div >
                 <img src={cover} alt="" />
-                <div className="bg-green-600 text-white w-40 text-center items-center rounded-lg shadow-lg p-4  animate-bounce mt-[-96px]">
+                <div className="bg-green-600 text-white w-40 text-center items-center rounded-lg drop-shadow-xl p-4  animate-bounce mt-[-96px]">
                     <span className="text-5xl">10+</span>
                     <br />
                     <span className="text-xl font-mono">

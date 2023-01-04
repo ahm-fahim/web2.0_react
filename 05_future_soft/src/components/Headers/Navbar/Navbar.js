@@ -37,7 +37,7 @@ const Navbar = () => {
                 }`}
             >
                 {navItem.map((item) => (
-                    <li className="mx-2" key={item.id}>
+                    <li className="mx-2 hover:text-green-600 duration-200" key={item.id}>
                         <a href={item.link}>{item.name}</a>
                     </li>
                 ))}
