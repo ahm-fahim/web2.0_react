@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    margin: 5px;
+    font-size: 15px;
+    background-color: purple;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.nav-link{
+    color:white;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 20px;
+    color: purple;
+}

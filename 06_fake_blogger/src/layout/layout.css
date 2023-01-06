@@ -1,0 +1,10 @@
+.children{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    background-color: #f901f93a;
+    padding: 20px;
+    border-radius: 10px;
+    height: 70vh;
+    overflow-y: scroll;
+}
