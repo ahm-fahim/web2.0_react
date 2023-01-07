@@ -46,9 +46,10 @@ const Shop = () => {
         setCart(newCart);
         addToDb(products.id);
     };
-    const handleDeleteCart = (id) => {
-        removeFromDb(id);
-        setCart(" ");
+    const handleDeleteCart = (product) => {
+        const rest = cart.filter((pd) => pd.id !== product.id);
+        setCart(rest);
+        removeFromDb(product.id);
     };
 
     return (
