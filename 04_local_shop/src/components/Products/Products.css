@@ -1,10 +1,11 @@
-.card{
-    min-height: 380px;
-    position: relative;
-    margin: 10px 0px;
-    border-bottom: none;
+
+.card img{
+    height:12rem;
 }
-.btnPosition button{
+.card{
+    height: 400px;
+}
+.btnPosition{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -12,9 +13,4 @@
     border-top-left-radius:0px;
     width: 100%;
     letter-spacing: 4px;
-}
-
-.shopName{
-    position: absolute;
-    bottom: 50px;
 }

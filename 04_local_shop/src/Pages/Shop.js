@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import MainLayout from "../../layout/MainLayout";
-import { addToDb, getStoredCart } from "../../utilities/fakedb";
-import Products from "../Products/Products";
-import Sidebar from "../Sidebar/Sidebar";
+import MainLayout from "../layout/MainLayout";
+import { addToDb, getStoredCart } from "../utilities/fakedb";
+import Products from "../components/Products/Products";
+import Sidebar from "../components/Sidebar/Sidebar";
 import "./Shop.css";
 
 const Shop = () => {

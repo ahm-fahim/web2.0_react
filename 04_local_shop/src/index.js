@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./Pages/ErrorPage";
-import Shop from "./components/Shop/Shop";
+import Shop from "./Pages/Shop";
+import Home from "./Pages/Home";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <Home />,
         errorElement: <ErrorPage />,
     },
     {

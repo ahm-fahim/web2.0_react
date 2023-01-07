@@ -9,24 +9,23 @@ const Products = (props) => {
 
     return (
         <div className="col-md-4 col-lg-2 col-sm-6">
-            <div className="card">
+            <div className="card mt-2 text-center">
+                <img src={img} alt="Not Found!" className="card-img-top" />
                 <div className="card-body">
-                    <img src={img} alt="Not Found!" className="img-fluid" />
-                    <h6 className="text-dark">{name}</h6>
-                    <h5>$ {price}</h5>
-                    <div className="text-secondary shopName">
-                        <small>In stock- {stock}</small>
-                        <small className="px-2">| seller- {seller}</small>
+                    <h6 className="card-title">{name}</h6>
+                    <div className="text-secondary card-text">
+                        <h5 className="text-danger">$ {price}</h5>
+                        <p>
+                            <small>In stock- {stock}</small>
+                            <small className="px-2">| seller- {seller}</small>
+                        </p>
                     </div>
-                    <div className="btnPosition">
-                        <button
-                            onClick={() => handleAddToCart(products)}
-                            className="btn btn-danger"
-                        >
-                            Add To Cart{" "}
-                            <FontAwesomeIcon icon={faShoppingCart} />
-                        </button>
-                    </div>
+                    <button
+                        onClick={() => handleAddToCart(products)}
+                        className="btn btn-danger btnPosition"
+                    >
+                        Add To Cart <FontAwesomeIcon icon={faShoppingCart} />
+                    </button>
                 </div>
             </div>
         </div>
