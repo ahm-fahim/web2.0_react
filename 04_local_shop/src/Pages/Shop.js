@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import MainLayout from "../layout/MainLayout";
-import { addToDb, getStoredCart } from "../utilities/fakedb";
+import { addToDb, getStoredCart, removeFromDb } from "../utilities/fakedb";
 import Products from "../components/Products/Products";
 import Sidebar from "../components/Sidebar/Sidebar";
 import "./Shop.css";
@@ -33,7 +33,6 @@ const Shop = () => {
 
     //add product to the cart
     const handleAddToCart = (products) => {
-        console.log(products);
         let newCart = [];
         const exists = cart.find((item) => item.id === products.id);
         if (!exists) {
@@ -46,6 +45,10 @@ const Shop = () => {
         }
         setCart(newCart);
         addToDb(products.id);
+    };
+    const handleDeleteCart = (id) => {
+        removeFromDb(id);
+        setCart(" ");
     };
 
     return (
@@ -60,7 +63,10 @@ const Shop = () => {
                         ></Products>
                     ))}
                 </div>
-                <Sidebar cart={cart}></Sidebar>
+                <Sidebar
+                    cart={cart}
+                    handleDeleteCart={handleDeleteCart}
+                ></Sidebar>
             </div>
         </MainLayout>
     );

@@ -1,7 +1,8 @@
 import React from "react";
+import CartItem from "../CartItem/CartItem";
 import "./Cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleDeleteCart }) => {
     let total = 0;
     let shipping = 0;
     let quantity = 0;
@@ -14,16 +15,29 @@ const Cart = ({ cart }) => {
     const totalAmount = total + shipping + vat;
     return (
         <div className="text-light">
+            <div className="cartItems">
+                {cart.map((items) => (
+                    <CartItem
+                        key={items.id}
+                        items={items}
+                        handleDeleteCart={handleDeleteCart}
+                    ></CartItem>
+                ))}
+            </div>
             <p>
-                Total Items :
-                <span className="text-danger fw-bold">{quantity}</span> $
+                Total Items :{" "}
+                <span className="text-danger fw-bold">{cart.length}</span>
             </p>
             <p>
-                Total Price :
+                Total Quantity :{" "}
+                <span className="text-danger fw-bold">{quantity}</span>
+            </p>
+            <p>
+                Total Price :{" "}
                 <span className="text-danger fw-bold">{total.toFixed(2)}</span>$
             </p>
             <p>
-                Total Shipping :
+                Total Shipping :{" "}
                 <span className="text-danger fw-bold">
                     {shipping.toFixed(2)}
                 </span>
@@ -33,7 +47,7 @@ const Cart = ({ cart }) => {
                 Vat: <span className="text-danger fw-bold">{vat}</span>
             </p>
             <p>
-                Total Amount:
+                Total Amount:{" "}
                 <span className="text-warning fw-bold">
                     {totalAmount.toFixed(2)}
                 </span>

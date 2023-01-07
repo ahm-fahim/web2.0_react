@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart";
 
-const Sidebar = ({ cart }) => {
+const Sidebar = ({ cart, handleDeleteCart }) => {
     return (
         <div>
-            <nav className="navbar navbar-dark sidebarPosition">
+            <nav className="navbar navbar-dark position-fixed bottom-50 end-0">
                 <div className="container">
                     <div className="d-flex">
                         <button
@@ -22,7 +22,7 @@ const Sidebar = ({ cart }) => {
                         </button>
                     </div>
                     <div
-                        className="offcanvas offcanvas-end bg-dark"
+                        className="offcanvas offcanvas-end bg-dark mt-5 pt-5"
                         tabIndex="-1"
                         id="offcanvasDarkNavbar"
                         aria-labelledby="offcanvasDarkNavbarLabel"
@@ -45,7 +45,10 @@ const Sidebar = ({ cart }) => {
                         </div>
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <Cart cart={cart}></Cart>
+                                <Cart
+                                    cart={cart}
+                                    handleDeleteCart={handleDeleteCart}
+                                ></Cart>
                             </ul>
                         </div>
                     </div>
