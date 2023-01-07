@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from '../components/Header/Header';
+import React from "react";
+import Header from "../components/Header/Header";
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
     return (
         <div>
             <Header></Header>
-            <div>{ children}</div>
+            <div>{children}</div>
         </div>
     );
 };
