@@ -1,3 +1,7 @@
 .nav-link{
     letter-spacing: 5px;
+    transition: 1s;
+}
+.nav-link:hover{
+    color:#bf1d00;
 }

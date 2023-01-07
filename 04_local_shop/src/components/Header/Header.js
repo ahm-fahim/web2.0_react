@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../images/pngwing.com.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -27,9 +28,14 @@ const Header = () => {
                     >
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item ">
-                                <span className="nav-link" aria-current="page">
+                                <Link className="nav-link" to="/">
+                                    Home
+                                </Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link" to="/shop">
                                     Shop
-                                </span>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <span className="nav-link">Orders</span>

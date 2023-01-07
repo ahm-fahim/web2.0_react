@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import MainLayout from "../../layout/MainLayout";
 import { addToDb, getStoredCart } from "../../utilities/fakedb";
 import Products from "../Products/Products";
 import Sidebar from "../Sidebar/Sidebar";
@@ -48,18 +49,20 @@ const Shop = () => {
     };
 
     return (
-        <div className="container-fluid text-bg-light">
-            <div className="row">
-                {products.map((product) => (
-                    <Products
-                        key={product.id}
-                        products={product}
-                        handleAddToCart={handleAddToCart}
-                    ></Products>
-                ))}
+        <MainLayout>
+            <div className="container-fluid text-bg-light">
+                <div className="row">
+                    {products.map((product) => (
+                        <Products
+                            key={product.id}
+                            products={product}
+                            handleAddToCart={handleAddToCart}
+                        ></Products>
+                    ))}
+                </div>
+                <Sidebar cart={cart}></Sidebar>
             </div>
-            <Sidebar cart={cart}></Sidebar>
-        </div>
+        </MainLayout>
     );
 };
 

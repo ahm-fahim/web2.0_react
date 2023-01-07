@@ -1,15 +1,12 @@
 import "./App.css";
 import Cover from "./components/Cover/Cover";
-import Header from "./components/Header/Header";
-import Shop from "./components/Shop/Shop";
+import MainLayout from "./layout/MainLayout";
 
 function App() {
     return (
-        <div>
-            <Header></Header>
+        <MainLayout>
             <Cover></Cover>
-            <Shop></Shop>
-        </div>
+        </MainLayout>
     );
 }
 

@@ -14,7 +14,10 @@ const Posts = () => {
             {posts.map((post) => (
                 <div key={post.id} className="bg-white mt-3 p-3">
                     <h2>{post.title}</h2>
-                    <Link className="btn btn-info text-white" to={"/postContainer/posts/" + post.id}>
+                    <Link
+                        className="btn btn-info text-white"
+                        to={"/postContainer/posts/" + post.id}
+                    >
                         Post Details
                     </Link>
                 </div>
