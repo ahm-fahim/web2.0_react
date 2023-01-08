@@ -7,7 +7,7 @@ import delivery from "../../images/delivery.png";
 
 const Cover = () => {
     return (
-        <div className="container cover mt-3">
+        <div className="cover">
             <div
                 id="carouselExampleDark"
                 className="carousel carousel-dark slide"
@@ -48,7 +48,11 @@ const Cover = () => {
                     >
                         <div className="row text-bg-dark p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12">
-                                <h1>Life Is Beautiful With Family!</h1>
+                                <h1 className="display-1">
+                                    <span className="text-danger">Life</span> Is
+                                    Beautiful With{" "}
+                                    <span className="text-danger">Family!</span>
+                                </h1>
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <img
@@ -62,7 +66,14 @@ const Cover = () => {
                     <div className="carousel-item" data-bs-interval="2000">
                         <div className="row text-bg-danger p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12">
-                                <h1>Without Friends Life is Incomplete!</h1>
+                                <h1 className="display-1">
+                                    Without{" "}
+                                    <span className="text-dark">Friends</span>{" "}
+                                    Life is{" "}
+                                    <span className="text-dark">
+                                        Incomplete!
+                                    </span>
+                                </h1>
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <img
@@ -74,9 +85,18 @@ const Cover = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="row text-bg-warning p-4 d-flex align-items-center justify-content-center">
+                        <div className="row text-bg-dark p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12 ">
-                                <h1>Wife is the half part of a men</h1>
+                                <h1 className="display-1">
+                                    <span className="text-warning">
+                                        If your wife
+                                    </span>{" "}
+                                    is happy with you,your life is{" "}
+                                    <sapn className="text-success">
+                                        {" "}
+                                        awesome!
+                                    </sapn>
+                                </h1>
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <img
@@ -90,7 +110,12 @@ const Cover = () => {
                     <div className="carousel-item">
                         <div className="row text-bg-info p-4 d-flex align-items-center justify-content-center">
                             <div className="col-lg-6 col-sm-12 ">
-                                <h1>We are provide fast delivery!</h1>
+                                <h1 className="display-1">
+                                    We are provide fast{" "}
+                                    <span className="text-white">
+                                        delivery!
+                                    </span>
+                                </h1>
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <img

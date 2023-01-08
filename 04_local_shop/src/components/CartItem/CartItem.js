@@ -11,11 +11,11 @@ const CartItem = ({ items, handleDeleteCart }) => {
             <div className="col-2">
                 <img src={img} alt="" className="cartImg" />
             </div>
-            <div className="col-8">
+            <div className="col-7">
                 <p className="cartItemsName">{name}</p>
                 <p className="cartItemsName">Quantity - {quantity}</p>
             </div>
-            <div className="col-2">
+            <div className="col-3">
                 <button
                     onClick={() => handleDeleteCart(items)}
                     className="btn btn-outline-danger"

@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="">
+        <div>
+            <div className="d-flex justify-content-center mt-5">
+                <img src={logo} alt="" width="200" />
+            </div>
+
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container">
-                    <span className="navbar-brand">
-                        <img src={logo} alt="" width="100" />
-                    </span>
                     <button
                         className="navbar-toggler"
                         type="button"

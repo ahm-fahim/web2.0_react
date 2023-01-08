@@ -18,11 +18,11 @@ const Sidebar = ({ cart, handleDeleteCart }) => {
                             aria-controls="offcanvasDarkNavbar"
                         >
                             <span className="text-danger">{cart.length}</span>
-                            <FontAwesomeIcon icon={faShoppingCart} />
+                            <FontAwesomeIcon className="text-secondary" icon={faShoppingCart} />
                         </button>
                     </div>
                     <div
-                        className="offcanvas offcanvas-end bg-dark mt-5 pt-5"
+                        className="offcanvas offcanvas-end bg-dark mt-5"
                         tabIndex="-1"
                         id="offcanvasDarkNavbar"
                         aria-labelledby="offcanvasDarkNavbarLabel"
