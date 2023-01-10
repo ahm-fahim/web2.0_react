@@ -39,7 +39,9 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <span className="nav-link">Orders</span>
+                                <Link className="nav-link" to="/orders">
+                                    Orders
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <span className="nav-link">Inventory</span>

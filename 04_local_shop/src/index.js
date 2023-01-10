@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./Pages/ErrorPage";
 import Shop from "./Pages/Shop";
 import Home from "./Pages/Home";
+import Orders from "./Pages/Orders";
+import { ProCartLoader } from "./loaders/ProCartLoader";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +18,11 @@ const router = createBrowserRouter([
     {
         path: "/shop",
         element: <Shop />,
+    },
+    {
+        path: "/orders",
+        loader: ProCartLoader,
+        element: <Orders />,
     },
 ]);
 
