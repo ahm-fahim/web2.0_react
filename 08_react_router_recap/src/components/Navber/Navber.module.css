@@ -1,0 +1,17 @@
+.navber {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    height: 50px;
+}
+.navLink {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    transition: 1s;
+}
+.navLink:hover {
+    color: lightblue;
+}
