@@ -27,7 +27,7 @@ const Cart = ({ cart, handleDeleteCart, handleClearCart }) => {
     };
 
     return (
-        <div className="text-light">
+        <div className="text-secondary">
             <div className="cartItems">
                 <RandomSelect randomItem={randomItem}></RandomSelect>
                 {cart.map((items) => (

@@ -1,13 +1,15 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Cart from '../components/Cart/Cart';
 import MainLayout from '../layout/MainLayout';
 
 const Orders = () => {
-    const { products, innitailCart } = useLoaderData();
+    const {innitailCart } = useLoaderData();
     return (
         <MainLayout>
-            <h1>Orders {products.length}</h1>
-            <h1>Orders {innitailCart.length}</h1>
+            <div className="container">
+                <Cart cart={innitailCart}></Cart>
+            </div>
         </MainLayout>
     );
 };
