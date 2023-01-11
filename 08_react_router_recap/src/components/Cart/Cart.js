@@ -20,6 +20,8 @@ const Cart = ({ cart, handleRemoveItem }) => {
                     />
                 ))}
                 {message}
+                {/* tarnary */}
+                {cart.length === 3 ? <p>if you buy 5 items you get 1 free</p>: <p>Buy More</p>}
             </div>
             <div>
                 <h3>Total Items: {cart.length}</h3>
