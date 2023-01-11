@@ -1,3 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
+}
+.subContainer {
+    background-color: lightgray;
+    padding: 10px;
+    height: 80vh;
+    border-radius: 10px;
+    width: 100%;
+}
 .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -8,5 +20,14 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+    .subContainer {
+        background-color: lightgray;
+        padding: 10px;
+        height: 40vh;
+        border-radius: 10px;
+        position: fixed;
+        top: 50px;
+        right: 0px;
     }
 }

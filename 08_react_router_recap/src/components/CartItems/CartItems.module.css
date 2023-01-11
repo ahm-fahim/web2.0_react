@@ -1,0 +1,23 @@
+.cart{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.cart img{
+    width: 60px;
+    height: 60px;
+}
+.cart button{
+    background-color: #ff000064;
+    color:red;
+    border:none;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
