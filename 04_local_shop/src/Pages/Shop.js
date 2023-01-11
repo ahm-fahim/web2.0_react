@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import MainLayout from "../layout/MainLayout";
-import { addToDb, getStoredCart, removeFromDb } from "../utilities/fakedb";
+import {
+    addToDb,
+    deleteShoppingCart,
+    getStoredCart,
+    removeFromDb,
+} from "../utilities/fakedb";
 import Products from "../components/Products/Products";
 import Sidebar from "../components/Sidebar/Sidebar";
 import "./Shop.css";
@@ -46,12 +51,21 @@ const Shop = () => {
         setCart(newCart);
         addToDb(products.id);
     };
+
+    // delete cart item one by one
     const handleDeleteCart = (product) => {
         const rest = cart.filter((pd) => pd.id !== product.id);
         setCart(rest);
         removeFromDb(product.id);
     };
 
+    // delete full cart item
+    const handleClearCart = () => {
+        setCart([]);
+        deleteShoppingCart();
+    };
+
+   
     return (
         <MainLayout>
             <div className="container-fluid text-bg-light">
@@ -67,6 +81,7 @@ const Shop = () => {
                 <Sidebar
                     cart={cart}
                     handleDeleteCart={handleDeleteCart}
+                    handleClearCart={handleClearCart}
                 ></Sidebar>
             </div>
         </MainLayout>

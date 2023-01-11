@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart";
 
-const Sidebar = ({ cart, handleDeleteCart }) => {
+const Sidebar = ({ cart, handleDeleteCart, handleClearCart}) => {
     return (
         <div>
             <nav className="navbar navbar-dark position-fixed bottom-50 end-0">
@@ -18,7 +18,10 @@ const Sidebar = ({ cart, handleDeleteCart }) => {
                             aria-controls="offcanvasDarkNavbar"
                         >
                             <span className="text-danger">{cart.length}</span>
-                            <FontAwesomeIcon className="text-secondary" icon={faShoppingCart} />
+                            <FontAwesomeIcon
+                                className="text-secondary"
+                                icon={faShoppingCart}
+                            />
                         </button>
                     </div>
                     <div
@@ -48,6 +51,7 @@ const Sidebar = ({ cart, handleDeleteCart }) => {
                                 <Cart
                                     cart={cart}
                                     handleDeleteCart={handleDeleteCart}
+                                    handleClearCart={handleClearCart}
                                 ></Cart>
                             </ul>
                         </div>
